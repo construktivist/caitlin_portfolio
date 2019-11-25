@@ -1,0 +1,26 @@
+{
+  "name": "caitlin_portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio for Caitlin Kelly",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/construktivist/caitlin_portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Keegan Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/construktivist/caitlin_portfolio/issues"
+  },
+  "homepage": "https://github.com/construktivist/caitlin_portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
