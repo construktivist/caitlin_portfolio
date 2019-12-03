@@ -1,0 +1,41 @@
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;
+
+@mixin breakpoint($point) {
+
+    @if $point == xsmall {
+        @media only screen and (max-width: $screen-xs-max) { @content; }
+    }
+
+    @else if $point == small {
+        @media (min-width: $screen-sm-min) { @content; }
+    }
+
+    @else if $point == medium {
+        @media only screen and (min-width: $screen-md-min) { @content; }
+    }
+
+    @else if $point == large {
+        @media only screen and (min-width: $screen-lg-min) { @content; }
+    }
+
+    @if $point == notmobile {
+        @media only screen and (min-width: $screen-sm-max) { @content; }
+    }
+}
+
+@mixin breakpoint-only($point) {
+    @if $point == small {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){ @content; }
+    }
+    @if $point == medium {
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { @content; }
+    }
+    @if $point == large {
+        @media (min-width: $screen-lg-min) { @content; }
+    }
+}
