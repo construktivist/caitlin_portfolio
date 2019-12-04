@@ -19,3 +19,9 @@
 
 body div {
   border: 1px dashed cyan; }
+
+body .nav {
+  position: fixed;
+  top: 0; }
+  body .nav li {
+    display: inline; }

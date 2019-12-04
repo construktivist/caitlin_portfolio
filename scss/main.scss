@@ -7,4 +7,11 @@ body {
     div {
         border: $guide;
     }
+    .nav {
+        position: fixed;
+        top: 0;
+        li {
+            display: inline;
+        } 
+    }
 }
