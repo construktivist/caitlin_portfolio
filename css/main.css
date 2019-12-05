@@ -22,6 +22,10 @@ body div {
 
 body .nav {
   position: fixed;
-  top: 0; }
+  top: 0;
+  right: 0; }
   body .nav li {
-    display: inline; }
+    list-style-type: none; }
+
+body .hide {
+  display: none; }

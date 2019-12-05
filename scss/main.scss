@@ -10,8 +10,12 @@ body {
     .nav {
         position: fixed;
         top: 0;
-        li {
-            display: inline;
+        right: 0;
+         li {
+            list-style-type: none;
         } 
+    }
+    .hide {
+        display: none;
     }
 }
