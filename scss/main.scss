@@ -1,20 +1,66 @@
-@import 'mixins/breakpoints.scss';
+@import './mixins/breakpoints.scss';
 @import 'grid.scss';
 
 $guide: 1px dashed cyan;
 
 body {
+    margin: 0;
+
+    // FONT AWESOME ICONS
+    .fa-bars {
+        &:before {
+            font-size: 2rem;
+        }
+    }
+
     div {
         border: $guide;
     }
+
     .nav {
         position: fixed;
         top: 0;
-        right: 0;
-         li {
-            list-style-type: none;
-        } 
+        left: 0;
+        width: 100%;
+        height: 50px;
+        button {
+            position: absolute;
+            right: 0;
+            width: 50px;
+            height: 47px;
+            cursor: pointer;
+        }
+        ul {
+            display: none;
+            &.open {
+                border: $guide;
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: 34px;
+                padding: 0;
+                background: white;
+                overflow-y: scroll;
+                > li {
+                    height: auto;
+                    text-align: center;
+                    width: 100vw;
+                    margin: 20px 0;
+                    list-style-type: none;
+                }
+            }
+        }
+
+        @include breakpoint(small) {
+            ul {
+                display: block;
+                &.desktop {
+                    width: 100%;
+                }
+            }
+        }
     }
+
     .hide {
         display: none;
     }
