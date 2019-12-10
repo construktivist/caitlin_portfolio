@@ -1,6 +1,7 @@
 @import './mixins/breakpoints.scss';
 
 .container {
+    display: grid;
     position: relative;
     margin: 0 auto;
     padding: 0;
@@ -10,6 +11,7 @@
     }
     @include breakpoint(small) {
         width: 750px;
+        grid-template-columns: 80% 20%; 
     }
     @include breakpoint(medium) {
         width: 970px;

@@ -1,4 +1,5 @@
 .container {
+  display: grid;
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -8,7 +9,8 @@
       padding: 0 1em; } }
   @media (min-width: 768px) {
     .container {
-      width: 750px; } }
+      width: 750px;
+      grid-template-columns: 80% 20%; } }
   @media only screen and (min-width: 992px) {
     .container {
       width: 970px; } }
@@ -44,7 +46,8 @@ body {
         top: 34px;
         padding: 0;
         background: white;
-        overflow-y: scroll; }
+        overflow-y: scroll;
+        overflow-x: hidden; }
         body .nav ul.open > li {
           height: auto;
           text-align: center;
@@ -52,9 +55,10 @@ body {
           margin: 20px 0;
           list-style-type: none; }
     @media (min-width: 768px) {
-      body .nav ul {
+      body .nav {
+        position: relative;
         display: block; }
-        body .nav ul.desktop {
-          width: 100%; } }
+        body .nav .mobile-nav-button {
+          display: none; } }
   body .hide {
     display: none; }
