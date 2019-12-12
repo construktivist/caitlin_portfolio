@@ -22,8 +22,11 @@ body {
   margin: 0; }
   body .fa-bars:before {
     font-size: 2rem; }
-  body div {
-    border: 1px dashed cyan; }
+  body .content {
+    border-right: 0; }
+    @media (min-width: 768px) {
+      body .content {
+        border-right: 5px solid #DA3D7C; } }
   body .nav {
     position: fixed;
     top: 0;
@@ -58,6 +61,10 @@ body {
       body .nav {
         position: relative;
         display: block; }
+        body .nav .nav-wrapper {
+          display: block;
+          position: fixed;
+          list-style-type: none; }
         body .nav .mobile-nav-button {
           display: none; } }
   body .hide {
