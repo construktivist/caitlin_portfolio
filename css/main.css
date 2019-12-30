@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 .container {
   display: grid;
   position: relative;
@@ -17,22 +18,73 @@
   @media only screen and (min-width: 1200px) {
     .container {
       width: 1170px; } }
+  .container .content {
+    display: grid; }
+    .container .content .section {
+      grid-template-rows: auto; }
 
 body {
   margin: 0; }
+  body h1, body h2 {
+    font-family: "Utopia", "Garamond", serif;
+    font-size: 2.1rem;
+    color: #DA3D7C;
+    margin: 0 0 2px; }
+    @media (min-width: 768px) {
+      body h1, body h2 {
+        font-size: 3.5rem; } }
+  body h3 {
+    font-family: "Roboto", "Helvetica", "sans-serif";
+    font-weight: normal;
+    margin: 0; }
+    @media (min-width: 768px) {
+      body h3 {
+        font-size: 2.0rem; } }
+  body h4 {
+    font-family: "Utopia", "Garamond", serif;
+    font-size: 1.5rem;
+    color: #F25DA0;
+    margin: 0 0 40px; }
+    @media (min-width: 768px) {
+      body h4 {
+        font-size: 3.0rem; } }
   body .fa-bars:before {
     font-size: 2rem; }
-  body .content {
-    border-right: 0; }
-    @media (min-width: 768px) {
-      body .content {
-        border-right: 5px solid #DA3D7C; } }
+  body .content .section {
+    text-align: center;
+    margin: 0 0 40px; }
+    body .content .section .intro-content {
+      margin-top: 80px; }
+      body .content .section .intro-content .headshot {
+        width: 155px;
+        height: 155px; }
+    body .content .section .about-content .headshot {
+      width: 155px;
+      height: 200px; }
+    body .content .section .about-content p.tag {
+      font-family: "Roboto", "Helvetica", "sans-serif";
+      font-size: 1.2rem;
+      margin: 0; }
+    body .content .section .writing-content .work img {
+      width: 155px;
+      height: 225px;
+      margin: 10px 0; }
+    body .content .section .writing-content img {
+      width: 250px;
+      height: 110px;
+      margin: 10px 0; }
+  @media (min-width: 768px) {
+    body .content {
+      border-right: 5px solid #DA3D7C; }
+      body .content .section {
+        text-align: left; } }
   body .nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px; }
+    height: 47px;
+    background-color: #643A85; }
     body .nav button {
       position: absolute;
       right: 0;
@@ -42,7 +94,6 @@ body {
     body .nav ul {
       display: none; }
       body .nav ul.open {
-        border: 1px dashed cyan;
         display: block;
         width: 100%;
         position: absolute;
@@ -60,7 +111,8 @@ body {
     @media (min-width: 768px) {
       body .nav {
         position: relative;
-        display: block; }
+        display: block;
+        background-color: white; }
         body .nav .nav-wrapper {
           display: block;
           position: fixed;

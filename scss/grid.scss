@@ -19,5 +19,11 @@
     @include breakpoint(large) {
         width: 1170px;
     }
+    .content {
+        display: grid;
+        .section {
+            grid-template-rows: auto;
+        }
+    }
 
 } 
