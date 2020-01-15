@@ -31,7 +31,9 @@ body {
 
     h3 {
         font-family: $sans-serif;
-        font-weight: normal;
+        font-weight: lighter;
+        font-style: italic;
+        letter-spacing: 2px;
         margin: 0;
 
         @include breakpoint(small) {
@@ -77,21 +79,47 @@ body {
                 p.tag {
                     font-family: $sans-serif;
                     font-size: 1.2rem;
+                    font-weight: lighter;
+                    letter-spacing: 2px;
                     margin: 0;
                 }
             }
             .writing-content {
+                h3 {
+                    color: $darkpink;
+                }
                 .work {
+                    margin-bottom: 60px;
                     img {
                         width: 155px;
                         height: 225px;
                         margin: 10px 0;
+                    }
+                    p {
+                        font-family: $sans-serif;
+                        font-weight: lighter;
+                        letter-spacing: 1px;
+                        text-align: left;
                     }
                 }
                 img {
                     width: 250px;
                     height: 110px;
                     margin: 10px 0;
+                }
+            }
+            .social {
+                text-align: center;
+                padding-inline-start: 0;
+                    li {
+                        border: 3px solid $pink;
+                        margin: 0 10px;
+                        padding: 5px;
+                }
+
+                .fa-twitter:before, .fa-linkedin:before, .fa-instagram:before {
+                    font-size: 3rem;
+                    color: $purple;
                 }
             }
         }
@@ -118,6 +146,7 @@ body {
             width: 50px;
             height: 47px;
             cursor: pointer;
+            color: white;
         }
         ul {
             display: none;

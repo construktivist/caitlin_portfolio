@@ -35,7 +35,9 @@ body {
         font-size: 3.5rem; } }
   body h3 {
     font-family: "Roboto", "Helvetica", "sans-serif";
-    font-weight: normal;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 2px;
     margin: 0; }
     @media (min-width: 768px) {
       body h3 {
@@ -64,15 +66,36 @@ body {
     body .content .section .about-content p.tag {
       font-family: "Roboto", "Helvetica", "sans-serif";
       font-size: 1.2rem;
+      font-weight: lighter;
+      letter-spacing: 2px;
       margin: 0; }
-    body .content .section .writing-content .work img {
-      width: 155px;
-      height: 225px;
-      margin: 10px 0; }
+    body .content .section .writing-content h3 {
+      color: #DA3D7C; }
+    body .content .section .writing-content .work {
+      margin-bottom: 60px; }
+      body .content .section .writing-content .work img {
+        width: 155px;
+        height: 225px;
+        margin: 10px 0; }
+      body .content .section .writing-content .work p {
+        font-family: "Roboto", "Helvetica", "sans-serif";
+        font-weight: lighter;
+        letter-spacing: 1px;
+        text-align: left; }
     body .content .section .writing-content img {
       width: 250px;
       height: 110px;
       margin: 10px 0; }
+    body .content .section .social {
+      text-align: center;
+      padding-inline-start: 0; }
+      body .content .section .social li {
+        border: 3px solid #F25DA0;
+        margin: 0 10px;
+        padding: 5px; }
+      body .content .section .social .fa-twitter:before, body .content .section .social .fa-linkedin:before, body .content .section .social .fa-instagram:before {
+        font-size: 3rem;
+        color: #643A85; }
   @media (min-width: 768px) {
     body .content {
       border-right: 5px solid #DA3D7C; }
@@ -90,7 +113,8 @@ body {
       right: 0;
       width: 50px;
       height: 47px;
-      cursor: pointer; }
+      cursor: pointer;
+      color: white; }
     body .nav ul {
       display: none; }
       body .nav ul.open {
