@@ -34,7 +34,7 @@ body {
       body h1, body h2 {
         font-size: 3.5rem; } }
   body h3 {
-    font-family: "Roboto", "Helvetica", "sans-serif";
+    font-family: "Roboto Condensed", "Helvetica", "sans-serif";
     font-weight: lighter;
     font-style: italic;
     letter-spacing: 2px;
@@ -64,7 +64,7 @@ body {
       width: 155px;
       height: 200px; }
     body .content .section .about-content p.tag {
-      font-family: "Roboto", "Helvetica", "sans-serif";
+      font-family: "Roboto Condensed", "Helvetica", "sans-serif";
       font-size: 1.2rem;
       font-weight: lighter;
       letter-spacing: 2px;
@@ -78,7 +78,7 @@ body {
         height: 225px;
         margin: 10px 0; }
       body .content .section .writing-content .work p {
-        font-family: "Roboto", "Helvetica", "sans-serif";
+        font-family: "Roboto Condensed", "Helvetica", "sans-serif";
         font-weight: lighter;
         letter-spacing: 1px;
         text-align: left; }
@@ -100,7 +100,25 @@ body {
     body .content {
       border-right: 5px solid #DA3D7C; }
       body .content .section {
-        text-align: left; } }
+        text-align: left; }
+        body .content .section .intro-content {
+          display: block;
+          margin: 80px auto;
+          width: 65%; }
+          body .content .section .intro-content .headshot {
+            width: 200px;
+            height: 200px; }
+        body .content .section .about-content {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); }
+          body .content .section .about-content div {
+            text-align: right;
+            margin-right: 40px; }
+            body .content .section .about-content div.headshot-container {
+              margin: 0; }
+          body .content .section .about-content .headshot {
+            width: 155px;
+            height: 200px; } }
   body .nav {
     position: fixed;
     top: 0;

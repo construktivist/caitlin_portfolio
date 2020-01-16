@@ -6,7 +6,7 @@ $guide: 1px dashed cyan;
 
 //FONTS
 $serif: "Utopia", "Garamond", serif;
-$sans-serif: "Roboto", "Helvetica", "sans-serif";
+$sans-serif: "Roboto Condensed", "Helvetica", "sans-serif";
 
 //COLORS
 $pink: #F25DA0;
@@ -128,6 +128,30 @@ body {
             border-right: 5px solid $darkpink;
             .section {
                 text-align: left;
+                .intro-content {
+                    display: block;
+                    margin: 80px auto;
+                    width: 65%;
+                    .headshot {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+                .about-content {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    div {
+                        text-align: right;
+                        margin-right: 40px;
+                        &.headshot-container {
+                            margin: 0;
+                        }
+                    }
+                    .headshot {
+                        width: 155px;
+                        height: 200px;
+                    }
+                }
             }
         }
     }
