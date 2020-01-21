@@ -70,7 +70,8 @@ body {
       letter-spacing: 2px;
       margin: 0; }
     body .content .section .writing-content h3 {
-      color: #DA3D7C; }
+      color: #DA3D7C;
+      font-size: 1.8rem; }
     body .content .section .writing-content .work {
       margin-bottom: 60px; }
       body .content .section .writing-content .work img {
@@ -82,7 +83,7 @@ body {
         font-weight: lighter;
         letter-spacing: 1px;
         text-align: left; }
-    body .content .section .writing-content img {
+    body .content .section .writing-content .game img {
       width: 250px;
       height: 110px;
       margin: 10px 0; }
@@ -98,7 +99,8 @@ body {
         color: #643A85; }
   @media (min-width: 768px) {
     body .content {
-      border-right: 5px solid #DA3D7C; }
+      border-right: 5px solid #DA3D7C;
+      padding-right: 40px; }
       body .content .section {
         text-align: left; }
         body .content .section .intro-content {
@@ -106,8 +108,8 @@ body {
           margin: 80px auto;
           width: 65%; }
           body .content .section .intro-content .headshot {
-            width: 200px;
-            height: 200px; }
+            width: 350px;
+            height: 350px; }
         body .content .section .about-content {
           display: grid;
           grid-template-columns: repeat(2, 1fr); }
@@ -117,8 +119,25 @@ body {
             body .content .section .about-content div.headshot-container {
               margin: 0; }
           body .content .section .about-content .headshot {
-            width: 155px;
-            height: 200px; } }
+            width: 275px;
+            height: 350px; }
+        body .content .section .writing-content h2, body .content .section .writing-content h4 {
+          text-align: right; }
+        body .content .section .writing-content .work img {
+          width: 185px;
+          height: 255px; }
+        body .content .section .writing-content .work .summary-image {
+          display: grid;
+          grid-template-columns: 70% 30%; }
+          body .content .section .writing-content .work .summary-image .image {
+            text-align: right; }
+        body .content .section .writing-content .game {
+          text-align: center; }
+          body .content .section .writing-content .game h3 {
+            text-align: left; }
+          body .content .section .writing-content .game img {
+            width: 650px;
+            height: 310px; } }
   body .nav {
     position: fixed;
     top: 0;
