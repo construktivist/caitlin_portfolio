@@ -117,7 +117,7 @@ body {
                     li {
                         border: 3px solid $pink;
                         margin: 0 10px;
-                        padding: 5px;
+                        padding: 10px;
                 }
 
                 .fa-twitter:before, .fa-linkedin:before, .fa-instagram:before {
@@ -132,6 +132,9 @@ body {
             padding-right: 40px;
             .section {
                 text-align: left;
+                h2 {
+                    text-align: right;
+                }
                 .intro-content {
                     display: block;
                     margin: 80px auto;
@@ -157,7 +160,7 @@ body {
                     }
                 }
                 .writing-content {
-                    h2, h4 {
+                    h4 {
                         text-align: right;
                     }
                     .work {
@@ -183,6 +186,9 @@ body {
                             height: 310px;
                         }
                     }
+                }
+                .social {
+                    text-align: right;
                 }
             }
         }
@@ -210,7 +216,7 @@ body {
                 display: block;
                 width: 100%;
                 position: absolute;
-                top: 34px;
+                top: 31px;
                 padding: 0;
                 background: white;
                 overflow-y: scroll;
@@ -221,6 +227,23 @@ body {
                     width: 100vw;
                     margin: 20px 0;
                     list-style-type: none;
+                    font-family: $sans-serif;
+                }
+            } 
+            li {
+                margin-bottom: 5px;
+                a {
+                    text-decoration: none;
+                    font-family: $sans-serif;
+                    font-weight: lighter;
+                    letter-spacing: 2px;
+                    color: black;
+                    &:hover {
+                        color: $pink;
+                    }
+                    &.active {
+                        color: $pink;
+                    }
                 }
             }
         }
@@ -229,10 +252,11 @@ body {
             position: relative;
             display: block;
             background-color: white;
-            .nav-wrapper {
+            ul {
                 display: block;
                 position: fixed;
                 list-style-type: none;
+                margin-top: 400px;
             }
             .mobile-nav-button {
                 display: none;
@@ -240,7 +264,4 @@ body {
         }
     }
 
-    .hide {
-        display: none;
-    }
 }
