@@ -52,6 +52,10 @@ body {
         font-size: 3.0rem; } }
   body .fa-bars:before {
     font-size: 2rem; }
+  body .purple {
+    background-color: #3B1556; }
+  body .pink {
+    background-color: #F25DA0; }
   body .content .section {
     text-align: center;
     margin: 0 0 40px; }
@@ -133,6 +137,15 @@ body {
           grid-template-columns: 70% 30%; }
           body .content .section .writing-content .work .summary-image .image {
             text-align: right; }
+            body .content .section .writing-content .work .summary-image .image > div {
+              width: 180px;
+              height: 240px;
+              position: relative;
+              top: auto;
+              bottom: 230px;
+              left: 50px;
+              right: auto;
+              z-index: -1; }
         body .content .section .writing-content .game {
           text-align: center; }
           body .content .section .writing-content .game h3 {
@@ -140,6 +153,15 @@ body {
           body .content .section .writing-content .game img {
             width: 650px;
             height: 310px; }
+          body .content .section .writing-content .game > div {
+            width: 370px;
+            height: 170px;
+            position: relative;
+            top: auto;
+            bottom: 140px;
+            left: auto;
+            right: auto;
+            z-index: -1; }
         body .content .section .social {
           text-align: right; } }
   body .nav {
