@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
+    "start": "npm run start",
     "scss": "node-sass --watch scss -o css"
   },
   "repository": {
