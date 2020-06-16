@@ -2,9 +2,8 @@
   "name": "caitlin_portfolio",
   "version": "1.0.0",
   "description": "A portfolio for Caitlin Kelly",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "test",
     "scss": "node-sass --watch scss -o css"
   },
   "repository": {
