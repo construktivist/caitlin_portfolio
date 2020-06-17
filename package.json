@@ -4,7 +4,7 @@
   "description": "A portfolio for Caitlin Kelly",
   "main": "index.html",
   "scripts": {
-    "start": "index.php",
+    "start": "node index.php",
     "scss": "node-sass --watch scss -o css"
   },
   "repository": {
